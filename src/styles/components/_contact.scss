@@ -1,0 +1,144 @@
+.form__container {
+  .form-control {
+    border-radius: 8px;
+    background-color: #e1e1e1;
+
+    &:focus {
+      box-shadow: none;
+      border-color: $primary;
+      background-color: #eeeeee;
+    }
+  }
+
+  textarea {
+    height: 300px;
+    max-height: 400px;
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: none;
+    }
+  }
+
+  button {
+    @include btn-form();
+    background-color: $primary;
+    font-family: "Play", sans-serif;
+    font-size: 13px;
+    margin-top: 37px;
+    padding: 7px 40px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: rgb(73, 73, 73);
+    font-family: "Play", sans-serif;
+  }
+
+  //=== Responsive === //
+
+  @include respond-above(xs) {
+    p {
+      font-size: 22px;
+    }
+  }
+
+  @include respond-above(lg) {
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+.contact-section {
+  .circle {
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  i {
+    font-size: 35px;
+    color: #fff;
+  }
+
+  .whatsapp {
+    background-color: #42e360;
+  }
+
+  .email {
+    background-color: #5ab8e4;
+  }
+
+  span {
+    display: block;
+    font-family: "Play", sans-serif;
+  }
+
+  //=== Responsive === //
+
+  @include respond-above(xs) {
+    .circle {
+      height: 50px;
+      width: 50px;
+      padding: 11px 0px 0px 0px;
+      // margin-top: 50px;
+    }
+
+    i {
+      font-size: 29px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    span {
+      font-size: 13px;
+    }
+  }
+
+  @include respond-above(sm) {
+    .circle {
+      height: 55px;
+      width: 55px;
+      padding: 11px 0px 0px 0px;
+      margin-top: 15px;
+    }
+
+    i {
+      font-size: 33px;
+    }
+
+    h5 {
+      font-size: 17px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @include respond-above(md) {
+    margin-top: 55px;
+  }
+
+  @include respond-above(lg) {
+    .circle {
+      height: 51px;
+      width: 51px;
+      padding: 10px 0px 0px 0px;
+    }
+
+    i {
+      font-size: 32px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+}

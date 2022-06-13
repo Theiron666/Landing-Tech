@@ -1,0 +1,39 @@
+.about {
+  span {
+    color: rgb(75, 75, 75);
+    font-family: "Play", sans-serif;
+    font-size: 14px;
+  }
+
+  @include respond-above(xs) {
+    margin: 2rem 0px 2rem 0px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  @include respond-above(md) {
+    margin: 6rem 0px 6rem 0px;
+    span {
+      font-size: 19px;
+    }
+  }
+}
+
+.icon-section {
+  text-align: center;
+
+  h3 {
+    font-family: "Play", sans-serif;
+  }
+
+  i {
+    color: #dc832f;
+    font-size: 65px;
+  }
+
+  p {
+    font-family: "Play", sans-serif;
+  }
+}

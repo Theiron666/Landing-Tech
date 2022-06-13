@@ -1,0 +1,27 @@
+.card__home {
+  border: none !important;
+  border-radius: 10px !important;
+  background: #e0e0e0 !important;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+
+  text-align: center;
+
+  img {
+    border-radius: 10px 10px 0px 0px !important;
+    min-height: 20vh;
+  }
+
+  .p {
+    color: #474747;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 14px;
+  }
+
+  button {
+    @include btn-card();
+  }
+
+  @include respond-between(xs, md) {
+    max-width: 30vh !important;
+  }
+}

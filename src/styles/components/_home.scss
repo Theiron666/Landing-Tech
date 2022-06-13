@@ -1,0 +1,227 @@
+.App {
+  background-color: $background;
+  position: absolute !important;
+}
+
+.home__main {
+  margin-top: 64px;
+  background-image: linear-gradient(to right, $primary 30%, $secundary 100%);
+}
+
+.home__text__section {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 45px;
+    font-family: "Racing Sans One", cursive;
+    margin-bottom: 22px;
+  }
+
+  p {
+    color: rgb(47, 47, 47);
+    font-family: "Play", sans-serif;
+  }
+
+  .btn-1 {
+    @include btn-1();
+  }
+
+  .btn-learn-more {
+    @include btn-learn-more();
+  }
+
+  // === Responsive === //
+
+  @include respond-above(xs) {
+    margin-top: 35px;
+
+    h1 {
+      font-size: 43px;
+      margin-bottom: 26px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @include respond-above(sm) {
+    margin: 75px 10px 0px 10px;
+
+    h1 {
+      font-size: 45px;
+      margin: 0px 0px 30px 0px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @include respond-above(md) {
+    h1 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @include respond-above(lg) {
+    margin: 110px 40px 0px 40px;
+
+    h1 {
+      font-size: 55px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+  }
+}
+
+.home__banner img {
+  height: auto;
+  margin-top: 100px;
+  width: 100%;
+
+  @include respond-below(sm) {
+    margin-top: 10px;
+  }
+}
+
+.home__h2 {
+  h2 {
+    background-color: #ebebeb;
+    font-family: "Racing Sans One", cursive;
+    text-align: center;
+  }
+
+  //=== Responsive === //
+
+  @include respond-above(xs) {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @include respond-above(sm) {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @include respond-above(md) {
+    h2 {
+      font-size: 37px;
+      margin-bottom: 45px;
+    }
+  }
+
+  @include respond-above(lg) {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+.home__arrow {
+  animation-name: example;
+  animation: example 2s infinite alternate ease-in-out;
+}
+
+@keyframes example {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0.6em);
+    opacity: 1;
+  }
+}
+
+.text-banner {
+  h5 {
+    color: rgb(75, 75, 75);
+    font-family: "Play", sans-serif;
+  }
+
+  @include respond-above(xs) {
+    h5 {
+      font-size: 22px;
+    }
+  }
+
+  @include respond-above(lg) {
+    h5 {
+      font-size: 29px;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+
+  h2 {
+    font-family: "Play", sans-serif;
+    color: #fff;
+    display: grid;
+    inset: 0;
+    margin: 0;
+    place-content: center;
+    position: absolute;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100vw;
+  }
+
+  //=== Responsive === //
+
+  @include respond-above(xs) {
+    margin-top: 40px;
+
+    img {
+      max-height: 9vh;
+    }
+
+    h2 {
+      font-size: 27px;
+    }
+  }
+
+  @include respond-above(sm) {
+    img {
+      max-height: 12vh;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  @include respond-above(md) {
+    img {
+      max-height: 15vh;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  @include respond-above(lg) {
+    img {
+      max-height: 16vh;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
